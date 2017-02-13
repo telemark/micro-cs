@@ -1,0 +1,60 @@
+{
+  "name": "micro-cs",
+  "description": "micro webservice that communicates with SuperOffice Customer Service API",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Jonas Enge",
+    "email": "jonas.enge@gmail.com",
+    "url": "https://github.com/maccyber"
+  },
+  "contributors": [
+    {
+      "name": "Geir Gåsodden",
+      "email": "geir.gasodden@pythonia.no",
+      "url": "https://github.com/zrrrzzt"
+    }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=7.4.0"
+  },
+  "scripts": {
+    "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
+    "test-offline": "standard && tap --reporter=spec test/**/*.js",
+    "coverage": "tap test/**/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
+    "setup": "npm install",
+    "standard-fix": "standard --fix",
+    "start": "micro -p 3000"
+  },
+  "keywords": [
+    "microservice",
+    "micro",
+    "cs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/maccyber/micro-cs.git"
+  },
+  "bugs": {
+    "url": "http://github.com/maccyber/micro-cs/issues"
+  },
+  "devDependencies": {
+    "coveralls": "2.11.16",
+    "nsp": "2.6.2",
+    "standard": "8.6.0",
+    "tap": "10.1.0"
+  },
+  "dependencies": {
+    "axios": "0.15.3",
+    "jsonwebtoken": "7.2.1",
+    "marked": "0.3.6",
+    "micro": "7.0.6",
+    "tfk-generate-jwt": "1.0.13"
+  },
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
