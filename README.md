@@ -8,9 +8,10 @@ API kall man kan poste inn som raw body i Postman eller i nettleser:
 
 ### Request
 
+```POST /createTicket```
+
 ```json
 {
-  "csMethod": createTicket,
   "data": {
     "categoryId": 10, - Sakens kategori blir satt via id. Disse finnes i CRM7.EJ_CATEGORY I SuperOffice databasen.
     "title": "Ny bestilling", - Tittel på sak.
@@ -123,7 +124,7 @@ GET /getPrograms
 
 ```json
 {
-  "csMethod": "getPrograms",
+  "csMethod": "getActiveTickets",
   "username": "username"
 }
 ```
