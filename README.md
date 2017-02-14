@@ -12,12 +12,10 @@ API kall man kan poste inn som raw body i Postman eller i nettleser:
 
 ```json
 {
-  "data": {
-    "categoryId": 10, - Sakens kategori blir satt via id. Disse finnes i CRM7.EJ_CATEGORY I SuperOffice databasen.
-    "title": "Ny bestilling", - Tittel på sak.
-    "message": "Dette er en bestilling.", - Sakens melding.
-    "image": "R0lGODlhPQBEAPeoAJosM..." - Vedlegget som Base64 String.
-  }
+  "categoryId": 10, - Sakens kategori blir satt via id. Disse finnes i CRM7.EJ_CATEGORY I SuperOffice databasen.
+  "title": "Ny bestilling", - Tittel på sak.
+  "message": "Dette er en bestilling.", - Sakens melding.
+  "image": "R0lGODlhPQBEAPeoAJosM..." - Vedlegget som Base64 String.
 }
 ```
 
