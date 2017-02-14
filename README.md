@@ -52,10 +52,10 @@ Henter alle sakskategorier som finnes i SuperOffice-databasen. (CRM7.EJ_CATEGORY
 
 ## getEquipment
 
-
-```GET /getEquipment```
 Henter ut alle felter fra tabellen ```y_mobile```
 
+### Request
+```GET /getEquipment```
 
 ### Response
 
@@ -84,7 +84,7 @@ Henter ut alle felter fra tabellen ```y_mobile```
 ## createEquipmentOrder
 
 ### Request
-```createEquipmentOrder```
+```POST /createEquipmentOrder```
 
 ### Response
 
