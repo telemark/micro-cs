@@ -32,11 +32,7 @@ Henter alle sakskategorier som finnes i SuperOffice-databasen. (CRM7.EJ_CATEGORY
 
 ### Request
 
-```json
-{
-  "csMethod": "getTicketCategories"
-}
-```
+```GET /getTicketCategories```
 
 ### Response
 
@@ -57,15 +53,10 @@ Henter alle sakskategorier som finnes i SuperOffice-databasen. (CRM7.EJ_CATEGORY
 
 ## getEquipment
 
+
+```GET /getEquipment```
 Henter ut alle felter fra tabellen ```y_mobile```
 
-### Request
-
-```json
-{ 
-  "csMethod": "getEquipment"
-}
-```
 
 ### Response
 
@@ -83,11 +74,7 @@ Henter ut alle felter fra tabellen ```y_mobile```
 
 ### Request
 
-```json
-{ 
-  "csMethod": "createOrder"
-}
-```
+```POST /createOrder```
 
 ### Response
 
@@ -98,11 +85,7 @@ Henter ut alle felter fra tabellen ```y_mobile```
 ## createEquipmentOrder
 
 ### Request
-```json
-{
-  "csMethod": "createEquipmentOrder"
-}
-```
+```createEquipmentOrder```
 
 ### Response
 
@@ -119,11 +102,10 @@ Henter ut alle felter fra tabellen ```y_mobile```
 
 ### Request
 
-```json
-{
-  "csMethod": "getPrograms"
-}
 ```
+GET /getPrograms
+```
+
 ### Response
 
 ```json
@@ -136,6 +118,8 @@ Henter ut alle felter fra tabellen ```y_mobile```
 ## getActiveTickets
 
 ### Request
+
+```GET /getActiveTickets```
 
 ```json
 {
