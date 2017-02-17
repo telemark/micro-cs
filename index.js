@@ -16,9 +16,10 @@ module.exports = async (req, res) => {
     result = marked(readme)
   } else {
     try {
+      const jwt = req.headers.authorization
       const method = methods(pathname)
-      const jwt = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImVuZ2oiLCJpYXQiOjE0ODY5OTc3NTgsImV4cCI6MTQ4NzAwMTM1OCwiaXNzIjoiaHR0cHM6Ly9hdXRoLnQtZmsubm8ifQ.StuT0x4Eap7eJdz0MiXGqVZ7BBvFBC8_sxJduiaFG0o'
-      result = await cs({jwt: jwt, csMethod: method})
+      const tmp = await cs({jwt: jwt, csMethod: method, data: data})
+      result = { id: tmp }
     } catch (e) {
       result = e.message || e
     }
