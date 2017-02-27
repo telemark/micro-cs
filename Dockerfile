@@ -26,10 +26,12 @@ RUN npm install --production
 
 # Env variables
 ENV SERVER_PORT 3000
-ENV LIMIT 5
+ENV CS_URL http://portalcode.t-fk.no/scripts/customer.exe?_sf=0&action=safeParse&includeId=ticket-endpoint
+ENV CS_KEY asecretpassword
+ENV tokenKey Gibberish, jibberish, jibber-jabber and gobbledygook
 
 # Expose 3000
 EXPOSE ${SERVER_PORT}
 
 # Startup
-ENTRYPOINT micro -p ${SERVER_PORT}
+ENTRYPOINT npm start
