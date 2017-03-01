@@ -17,10 +17,10 @@ module.exports = async (req, res) => {
     result = marked(readme)
   } else {
     try {
-      const jwt = req.headers.authorization
       const method = methods(pathname)
-      const tmp = await cs({jwt: jwt, csMethod: method, data: data})
-      result = { id: tmp }
+      const token = req.headers.authorization
+      const tmp = await cs({token: token, csMethod: method, data: data})
+      result = {id: tmp}
     } catch (e) {
       result = e.message || e
     }
@@ -31,3 +31,4 @@ module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With')
   send(res, status, result)
 }
+
