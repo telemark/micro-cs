@@ -52,7 +52,7 @@
     "jsonwebtoken": "8.2.2",
     "marked": "0.3.16",
     "micro": "7.0.6",
-    "tfk-generate-jwt": "1.0.13"
+    "tfk-generate-jwt": "2.0.0"
   },
   "env": {
     "NODE_ENV": "production"
