@@ -51,7 +51,7 @@
     "axios": "0.18.0",
     "jsonwebtoken": "8.2.2",
     "marked": "0.4.0",
-    "micro": "9.3.2",
+    "micro": "9.3.3",
     "tfk-generate-jwt": "2.0.0"
   },
   "env": {
