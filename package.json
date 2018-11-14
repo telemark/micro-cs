@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "axios": "0.18.0",
-    "jsonwebtoken": "8.2.2",
+    "jsonwebtoken": "8.4.0",
     "marked": "0.5.1",
     "micro": "9.3.3",
     "tfk-generate-jwt": "2.0.0"
