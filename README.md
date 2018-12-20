@@ -150,4 +150,6 @@ GET /getPrograms
 }
 ```
 
-![alt text](https://robohash.org/micro-cs.png "Robohash image of micro-cs")
+# License
+
+[MIT](LICENSE)
