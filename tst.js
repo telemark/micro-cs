@@ -7,8 +7,7 @@ const payload = {
   description: 'rAmen'
 }
 
-const token = generateToken({key: config.tokenKey, payload: payload})
+const token = generateToken({ key: config.tokenKey, payload: payload })
 console.log(token)
 
-console.log(validateToken({key: config.tokenKey, jws: token}))
-
+console.log(validateToken({ key: config.tokenKey, jws: token }))

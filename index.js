@@ -8,7 +8,7 @@ const methods = require('./lib/methods')
 const cs = require('./lib/cs')
 
 module.exports = async (req, res) => {
-  const {query, pathname} = await parse(req.url, true)
+  const { query, pathname } = await parse(req.url, true)
   const data = req.method === 'POST' ? await json(req) : query
   let result = {}
   if (!pathname || pathname === '/') {
@@ -19,8 +19,8 @@ module.exports = async (req, res) => {
     try {
       const method = methods(pathname)
       const token = req.headers.authorization
-      const tmp = await cs({token: token, csMethod: method, data: data})
-      result = {id: tmp}
+      const tmp = await cs({ token: token, csMethod: method, data: data })
+      result = { id: tmp }
     } catch (e) {
       result = e.message || e
     }
@@ -31,4 +31,3 @@ module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With')
   send(res, status, result)
 }
-
